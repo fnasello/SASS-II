@@ -1,0 +1,54 @@
+// Importar
+@import "mapas";
+@import "mixin";
+@import "extend";
+@import "fondos";
+@import "colores";
+@import "tipografias";
+
+* {
+    margin: 0;
+    padding: 0px;
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    .menu-item {
+        float: left;
+
+        // pseudoclase
+        &:hover {
+            background-color: #48c9b0;
+        }
+
+        .enlace {
+            display: block;
+            color: #ffffff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+    }
+}
+
+h1 {
+    text-align: center;
+    margin: 30px;
+}
+
+.principal {
+    margin: 30px;
+
+    .img1 {
+        border-radius: 5px;
+    }
+}
+
+.footer .end {
+    text-align: center;
+    padding: 20px;
+}

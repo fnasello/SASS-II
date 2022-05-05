@@ -1,0 +1,12 @@
+// Extend
+.seccion {
+    display: grid;
+    justify-content: space-between;
+    gap: 15px;
+
+}
+
+.seccion--nueva {
+    @extend .seccion;
+    background-color: #A2344d;
+}

@@ -1,0 +1,17 @@
+// Mixin
+
+// Sintaxis: 
+// @mixin nombre (argumento1, argumento2){
+//   width: argumento1;
+//   height: argumento2;
+
+@mixin tamanio ($ancho, $alto) {
+    // fragmento que se imprime
+    width: $ancho;
+    height: $alto;
+}
+
+// Invocar mixin(?
+.img1 {
+    @include tamanio (800px, 900px);
+}

@@ -1,0 +1,11 @@
+$colors: (
+  twitter: #55acee,
+  instagram: #E21CA6,
+);
+
+@each $name-color, $bgcolor in $colors {
+    .btn--#{$name-color} {
+        background-color: $bgcolor;
+    }
+}
+
